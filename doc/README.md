@@ -28,7 +28,15 @@ with `2` = `weather` and `4` = `pip` or `apt`.
 You only have to care about your code in some `NAMESPACE` (in practice: proper folders under a root project name).  
 `1i` will make all the possible `TARGET`s for you in one command.
 
-The above `NAMESPACE` example is a bit too simplistic: in practice, we would prefer a two-part subdomain in the form `package.vendor.1i.is`, like `fasthtml.answerai.1i.is`. When the vendor and the package name are the same, then we may imply it with a single subdomain `name.1i.is` (that's what happens when you simply reach `1i.is`: it's a contraction of `1i.1i.1i.is`). We suggest you reproduce this scheme if deploying the `1i` paradigm to your own domain.
+The above `NAMESPACE` example is a bit too simplistic: in practice, we would prefer a two-part subdomain in the form 
+
+```
+… package.vendor.1i.is …
+…   2a      2b     3   …
+```
+For instance, `fasthtml.answerai.1i.is`, with `answerai` the vendor (`2b`) and `fasthtml` the package (`2a`).
+
+When the vendor and the package name are the same, then we may imply it with a single subdomain `name.1i.is` (that's what happens when you simply reach `1i.is`: it's a contraction of `1i.1i.1i.is`). We suggest you reproduce this scheme if deploying the `1i` paradigm to your own domain.
 
 
 

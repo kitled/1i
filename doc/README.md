@@ -44,6 +44,4 @@ You may also subdivide your package domain if its name differs from yours: `py.r
 
 Whatever you do, the user should always get the best way when issuing your shortest names (`name.1i.is` should dynamically alias to the best long name for the user's platform).
 
-We generally recommend finding ways that will help convergence between platforms (Docker, Flatpak, etc.) or ways that default to the smallest possible footprint for your project (if a simple shell script does it, then do that).
-
-
+We generally recommend finding ways that that default to the smallest possible footprint for your project (if a simple shell script does it, then do that). You may also opt for single distribution for all targets (things like Docker) as a preferred strategy for defaults, and let users dig through specific ways on their own.

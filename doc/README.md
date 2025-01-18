@@ -54,7 +54,7 @@ For instance, `fasthtml.answerai.1i.is`, with `answerai` the vendor (`2a`) and `
 
 When the vendor and the package name are the same (`a` = `b`), then we may imply it with a singular subdomain `name.1i.is` (that's what happens when you simply reach `1i.is`: it's a contraction of `1i.1i.1i.is`). We suggest you follow this scheme when using `1i`, and if deploying the `1i` paradigm to your own domain (some `repo.private.corp.com`).
 
-You should always aim for the shortest name. If your package has named variants, such as `repo-py` and `repo-rust`, and `repo` is your `vendor` name as well, then `py.name` and `rust.name` should be enough. Long `-` names are always used under the hood, and accessible in your namespace: `name-py.name`, `name-rust.name`, etc. 
+You should always aim for the shortest name. If your package has named variants, such as `repo-py` and `repo-rust`, and `repo` is your `vendor` name as well, then `py.repo` and `rust.repo` should be enough. Long `-` names are always used under the hood, and accessible in your namespace: `name-py.name`, `name-rust.name`, etc. 
 
 You may also subdivide your package domain if its name differs from yours: `py.repo.vendor`, `rust.repo.vendor`, with `repo.vendor` following a ordered lists of default/recommended package managers per platform (for instance, `pip` then `apt/dnf/pacman…` then GitHub `clone` with proper wiring on Linux; but for instance rather a GitHub clone first on Android).
 

@@ -32,11 +32,11 @@ The above `NAMESPACE` example is a bit too simplistic: in practice, we would pre
 
 ```
 … package.vendor.1i.is …
-…   2a      2b     3   …
+…   2b      2a     3   …
 ```
-For instance, `fasthtml.answerai.1i.is`, with `answerai` the vendor (`2b`) and `fasthtml` the package (`2a`).
+For instance, `fasthtml.answerai.1i.is`, with `answerai` the vendor (`2a`) and `fasthtml` the package (`2b`).
 
-When the vendor and the package name are the same, then we may imply it with a single subdomain `name.1i.is` (that's what happens when you simply reach `1i.is`: it's a contraction of `1i.1i.1i.is`). We suggest you reproduce this scheme if deploying the `1i` paradigm to your own domain.
+When the vendor and the package name are the same (`a` = `b`), then we may imply it with a single subdomain `name.1i.is` (that's what happens when you simply reach `1i.is`: it's a contraction of `1i.1i.1i.is`). We suggest you reproduce this scheme if deploying the `1i` paradigm to your own domain.
 
 
 

@@ -17,10 +17,13 @@ Everything is a list. Or graph. Some namespace. `1i` leverages a simple domain t
 
 `https://` **`NAMESPACE`** . `1i.is` / **`TARGET`**
 
-For instance, `https://fasthtml.1i.is/linux/pip` to install `fasthtml` on Linux using `pip`.
+For instance, `https://weather.1i.is/linux/pip` to install `fasthtml` on Linux using `pip`.  
+The resulting command usually looks something like `TARGET install NAMESPACE`, e.g. `pip install weather`, `apt install weather`.
 
 You only have to care about your code in some `NAMESPACE` (in practice: proper folders under a root project name).  
 `1i` will make all the possible `TARGET`s for you in one command.
+
+The above `NAMESPACE` example is a bit too simplistic: in practice, we would prefer a two-part subdomain in the form `package.vendor.1i.is`, like `fasthtml.answerai.1i.is`. When the vendor and the package name are the same, then we may imply it with a single subdomain `name.1i.is` (that's what happens when you simply reach `1i.is`: it's a contraction of `1i.1i.1i.is`). We suggest you reproduce this scheme if deploying the `1i` paradigm to your own domain.
 
 
 

@@ -11,3 +11,17 @@ This is where `1i` comes in. It brings **the power of the 1-liner to perform all
 
 Why should you have to care how `pip` or `cargo` want things besides application design? You can, and you should if that's your thing, but generally the beauty of programming lies in the interface between some `def func(…)` in the code and a terminal `$ func …` command that does the thing. Everything in-between these two steps is hinderance at best, obstacles at worst. 1i intends to solve that problem in the most general manner possible—ideally, for all languages, to all platforms, with all package managers. This is obviously a community effort by principle, wherein one circumstantial ambassador of each combination comes to fix what's broken since the last one came. It's the textbook example of doing it one time and one time only for the entire population of programmers worldwide. And it's hopefully a meaningful way to help grow said population, by onboarding many more who otherwise couldn't, or wouldn't contribute.
 
+## How it works
+
+Everything is a list. Or graph. Some namespace. `1i` leverages a simple domain to namespace all the things into their proper category.
+
+`https://` **`NAMESPACE`** . `1i.is` / **`TARGET`**
+
+For instance, `https://fasthtml.1i.is/linux/pip` to install `fasthtml` on Linux using `pip`.
+
+You only have to care about your code in some `NAMESPACE` (in practice: proper folders under a root project name).  
+`1i` will make all the possible `TARGET`s for you in one command.
+
+
+
+

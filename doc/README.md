@@ -13,6 +13,16 @@ Why should you have to care how `pip` or `cargo` want things besides application
 
 ## How it works
 
+Users generally only need to do a simple line:
+
+```
+get THING_NAME
+```
+
+Under the hood, this command reaches the `1i.is` servers at a URL of the form `https://THING_NAME.1i.is/…` where the request part is dynamically chosen based on their current platform and preferred packaging (if any, by default what you recommend as the THING maker).
+
+## URLs
+
 Everything is a list. Or graph. Some namespace. `1i` leverages a simple domain to namespace all the things into their proper category.
 
 ```

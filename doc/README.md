@@ -56,7 +56,7 @@ When the vendor and the package name are the same (`a` = `b`), then we may imply
 
 You should always aim for the shortest name. If your package has named variants, such as `repo-py` and `repo-rust`, and `repo` is your `vendor` name as well, then `py.repo` and `rust.repo` should be enough. Long `-` names are always used under the hood, and accessible in your namespace: `name-py.name`, `name-rust.name`, etc. 
 
-You may also subdivide your package domain if its name differs from yours: `py.repo.vendor`, `rust.repo.vendor`, with `repo.vendor` following a ordered lists of default/recommended package managers per platform (for instance, `pip` then `apt/dnf/pacman…` then GitHub `clone` with proper wiring on Linux; but for instance rather a GitHub clone first on Android).
+You may also subdivide your package domain if its name differs from yours: `py.repo.vendor`, `rust.repo.vendor`, with `repo.vendor` (default, unspecified request) following ordered lists of default/recommended package managers per platform (for instance, `pip` then `apt/dnf/pacman…` then GitHub `clone` with proper wiring on Linux; but for instance rather a GitHub clone first on Android).
 
 Whatever you do, the user should always get the best way when issuing your shortest names (`name.1i.is` should dynamically alias to the best long name for the user's platform).
 

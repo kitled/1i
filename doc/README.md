@@ -38,6 +38,12 @@ with `2` = `weather` and `4` = `pip` or `apt`.
 You only have to care about your code in some `NAMESPACE` (in practice: proper folders under a root project name).  
 `1i` will make all the possible `TARGET`s for you in one command.
 
+You would choose if the requestless URL `https://weather.1i.is/` defaults to `pip` or `apt` when both are available.
+
+### Subdomain schemes
+
+> Generally: shorter is better; and redundancy leads to shorter.
+
 The above `NAMESPACE` example is a bit too simplistic: in practice, we would prefer a two-part subdomain in the form 
 
 ```
@@ -55,3 +61,5 @@ You may also subdivide your package domain if its name differs from yours: `py.r
 Whatever you do, the user should always get the best way when issuing your shortest names (`name.1i.is` should dynamically alias to the best long name for the user's platform).
 
 We generally recommend finding ways that that default to the smallest possible footprint for your project (if a simple shell script does it, then do that). You may also opt for single distribution for all targets (things like Docker) as a preferred strategy for defaults, and let users dig through specific ways on their own.
+
+

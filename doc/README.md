@@ -15,10 +15,13 @@ Why should you have to care how `pip` or `cargo` want things besides application
 
 Everything is a list. Or graph. Some namespace. `1i` leverages a simple domain to namespace all the things into their proper category.
 
-`https://` **`NAMESPACE`** . `1i.is` / **`TARGET`**
+```
+https://NAMESPACE.1i.is/TARGET
+  1         2       3     4
+```
 
-For instance, `https://weather.1i.is/linux/pip` to install `fasthtml` on Linux using `pip`.  
-The resulting command usually looks something like `TARGET install NAMESPACE`, e.g. `pip install weather`, `apt install weather`.
+For instance, `https://weather.1i.is/linux/pip` to install `fasthtml` (`2`) on Linux using `pip` (`4`).  
+The resulting command usually looks something like `TARGET install NAMESPACE` (`4 install 2`), e.g. `pip install weather`, `apt install weather` with `2` = `weather` and `4` = `pip` or `apt`.
 
 You only have to care about your code in some `NAMESPACE` (in practice: proper folders under a root project name).  
 `1i` will make all the possible `TARGET`s for you in one command.
